@@ -1,0 +1,87 @@
+/* div de padre */
+.App {
+  display: grid;
+  grid-template-columns: repeat(7, 8fr);
+  gap: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: infinite;
+}
+
+/* cara trasera div*/
+.Card {
+  box-shadow: 0px 4px 4px 0px rgb(54, 7, 226);
+  background-color: aliceblue;
+  font-size: 10%;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 1px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/* cara es una img */
+.Card2 {
+  box-shadow: 0px 4px 4px 0px rgb(21, 24, 24);
+  font-size: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-image: url("./img/pokeeee.jpg");
+  cursor: pointer;
+  z-index: 1;
+
+ 
+}
+
+
+
+body {
+  background-image: url("./img/Imagen fondo de cartas.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 8fr);
+  gap: 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+#root {
+  --w: calc(70vw / 6);
+  --h: calc(70vh / 3);
+  transform-style: preserve-3d;
+
+}
+
+
+* {
+  transition: all 0.1s;
+}
+
+
+.logo {
+  /* ancho */
+  width: 400px;
+  height: 200px;
+}
+
+.icono {
+  margin-left: 25%;
+}
